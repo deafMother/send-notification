@@ -1,0 +1,143 @@
+@import "./_reset.scss";
+
+.form-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(128, 128, 128, 0.459),
+    rgba(66, 66, 42, 0.61)
+  );
+
+  .form {
+    width: 60%;
+    height: 300px;
+    max-width: 500px;
+    background-color: rgba(93, 207, 143, 0.637);
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    input:not([type="submit"]) {
+      color: white;
+      background-color: rgb(202, 202, 202);
+    }
+    input {
+      border: none;
+      font-size: 1.3rem;
+      padding: 0.4rem 1rem;
+      margin: 0.8rem 0;
+    }
+    input[type="submit"] {
+      cursor: pointer;
+      background-color: #fff;
+      color: black;
+    }
+  }
+}
+
+.container {
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 4px;
+  background-color: palevioletred;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: relative;
+  .notification {
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+
+    font-weight: bold;
+    color: tomato;
+    background-color: #fff;
+    top: 5%;
+    right: 1%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.user-list {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  background-color: rgba(93, 182, 182, 0.466);
+  border-radius: 8px;
+  .user {
+    margin: 0.6rem 0;
+    padding: 0.3rem;
+    background-color: teal;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform 200ms ease-out;
+    :hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.message {
+  margin-top: 2rem;
+  border-radius: 4px;
+  background-color: thistle;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+
+  input:not([type="submit"]) {
+    margin-top: 2rem;
+
+    border: none;
+    border-radius: 2px;
+    padding: 1rem;
+  }
+  .submit-btn {
+    display: block;
+    width: 100px;
+    margin: 1rem auto;
+    border: 1px solid rgba(128, 128, 128, 0.548);
+    border-radius: 4px;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    background-color: #fff;
+  }
+}
+
+.messages {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+
+  h3 {
+    background-color: violet;
+    color: white;
+    padding: 4px 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .message-from {
+    margin: 0.4px 0;
+    padding: 1rem;
+    border-bottom: 2px solid rgba(93, 207, 143, 0.637);
+    &:hover {
+      box-shadow: 0px 0px 3px 1px grey;
+    }
+  }
+}
